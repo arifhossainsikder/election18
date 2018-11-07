@@ -60,18 +60,21 @@ padding: 20px 0;
 	 font-size: 100%;
     letter-spacing: -1px; 
 }
+#country-svg .st0{fill:#E0CD3D;}
+#country-svg .st1{fill:#232323;}
+#country-svg .st2{}
+#country-svg .st3{font-size:21.4348px;}
+#country-svg .st4{fill:#80C144;}
+#country-svg .st5{fill:#C46140;}
+#country-svg .st6{fill:#FCD8A6;}
+#country-svg .st7{font-size:24.1707px;}
+#country-svg .st8{fill:#9F84B0;}
+#country-svg .st9{fill:#F79AC5;}
+#country-svg .st10{fill:#FEF48B;}
+#country-svg g text{font-size:  100% !important; } 
 
-#country-svg .st0{ fill: #f76400;}
-#country-svg .st1{fill:#232323;} 
-#country-svg .st3{}
-#country-svg .st4{fill:#00CC99;}
-#country-svg .st5{fill:#9AC0C0;}
-#country-svg .st6{fill:#7EEDC8;}
-#country-svg .st7{fill:#BCE573;}
-#country-svg .st8{fill:#46D346;}
-#country-svg .st9{fill:#E0C500;}
 
-svg #sylhet{
+svg .division{
 	 
 	-moz-transition: all 0.3s ;
 	-webkit-transition: all 0.3s;
@@ -80,15 +83,15 @@ svg #sylhet{
 
  }
 
-svg  #sylhet:hover   {
+svg  .division:hover   {
 
 	 -webkit-transform: scale(1.1);
 	-moz-transform: scale(1.1);
 	-o-transform: scale(1.1);
 	transform: scale(1.1); 
-	font-size: 120% !important; 
-	fill: #087508 !important;
-	color: #fff !important;
+	font-size: 150% !important; 
+	fill: #087508 !important; 
+	font-weight: normal !important;
 	cursor: pointer;
  
 }
@@ -101,17 +104,11 @@ svg g text:active, svg text:active{
 } 
 
 svg, svg g text, svg text{
-	font-weight: bold;
-    font-size: 57%;
+	font-weight: normal;
+     font-size: 65% !important;
     font-family: sans-serif !important;
 }
-
-.seat svg g text, .district svg g text{
-font-weight: bold !important;
-    font-family: sans-serif !important;
-    font-size: 101% !important;
-}
-
+ 
 
 
 /*end svg*/
@@ -372,6 +369,7 @@ table th, table td{
 	position: relative;
 	text-decoration: none;
 }
+
 
 .icon:before {
 	-moz-osx-font-smoothing: grayscale;
@@ -839,4 +837,34 @@ table.default th {
 		border-right: 
 	}
 
+}
+
+.clearfix{
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+.author-name{
+	overflow: hidden;
+	display: block;
+	font-weight: 600;
+	padding: 10px 0;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	font-size: 18px;
+	margin: 15px 0 20px 0; 
+	    width: 65%;
+}
+
+.detail-content p{
+	    font-size: 16px;
+      line-height: 24px;
+      padding-bottom: 15px;
+}
+
+ .caption {
+    display: block;
+    caption-side: bottom;
+    font-size: 12px;
+    line-height: 17px;
 }
