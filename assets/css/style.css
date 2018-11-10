@@ -60,47 +60,46 @@ padding: 20px 0;
 	 font-size: 100%;
     letter-spacing: -1px; 
 }
-#country-svg .st0{fill:#E0CD3D;}
-#country-svg .st1{fill:#232323;}
-#country-svg .st2{}
-#country-svg .st3{font-size:21.4348px;}
-#country-svg .st4{fill:#80C144;}
-#country-svg .st5{fill:#C46140;}
-#country-svg .st6{fill:#FCD8A6;}
-#country-svg .st7{font-size:24.1707px;}
-#country-svg .st8{fill:#9F84B0;}
-#country-svg .st9{fill:#F79AC5;}
-#country-svg .st10{fill:#FEF48B;}
+#country-svg  .st0{fill:#E0CD3D;}
+#country-svg  .st1{fill:#232323;}
+#country-svg  .st4{fill:#80C144;}
+#country-svg  .st5{fill:#C46140;}
+#country-svg  .st6{fill:#FCD8A6;}
+#country-svg  .st7{font-size:24.1707px;}
+#country-svg  .st8{fill:#9F84B0;}
+#country-svg  .st9{fill:#F79AC5;}
+#country-svg  .st10{fill:#FEF48B;}
+
 #country-svg g text{font-size:  100% !important; } 
 
 
-svg .division{
-	 
+svg .division{	 
 	-moz-transition: all 0.3s ;
 	-webkit-transition: all 0.3s;
 	-o-transition: .2s ease;
 	transition: all 0.3s;
-
  }
 
-svg  .division:hover   {
-
-	 -webkit-transform: scale(1.1);
-	-moz-transform: scale(1.1);
-	-o-transform: scale(1.1);
-	transform: scale(1.1); 
+svg .division:hover   {
+	 -webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	transform: scale(1.05); 
 	font-size: 150% !important; 
 	fill: #087508 !important; 
-	font-weight: normal !important;
+	font-weight: bold !important;
 	cursor: pointer;
+}
  
+
+svg .division:hover path{
+	fill: #087508 !important;  
 }
 
- 
 
 svg g path:active, svg path:active,
-svg g text:active, svg text:active{
-	fill: green;
+svg g text:active, svg text:active{	
+	fill: #087508 !important; 
 } 
 
 svg, svg g text, svg text{
@@ -108,8 +107,6 @@ svg, svg g text, svg text{
      font-size: 65% !important;
     font-family: sans-serif !important;
 }
- 
-
 
 /*end svg*/
 /*Start tonmoy css*/
@@ -369,7 +366,6 @@ table th, table td{
 	position: relative;
 	text-decoration: none;
 }
-
 
 .icon:before {
 	-moz-osx-font-smoothing: grayscale;
@@ -839,32 +835,44 @@ table.default th {
 
 }
 
-.clearfix{
-	margin-bottom: 15px;
-	margin-top: 15px;
-}
 
 .author-name{
-	overflow: hidden;
-	display: block;
-	font-weight: 600;
-	padding: 10px 0;
-	border-top: 1px solid #000;
-	border-bottom: 1px solid #000;
-	font-size: 18px;
-	margin: 15px 0 20px 0; 
-	    width: 65%;
+	    overflow: hidden;
+    display: block;
+    font-weight: 600;
+    padding: 10px 0;
+    border-top: 1px solid #000;
+    border-bottom: 1px solid #000;
+    font-size: 18px;
+    margin: 15px 0 20px 0;
+    width: 65%;
 }
 
 .detail-content p{
-	    font-size: 16px;
-      line-height: 24px;
-      padding-bottom: 15px;
+   margin: 0 0 10px;
+
 }
 
- .caption {
-    display: block;
+.caption{
+	    display: block;
     caption-side: bottom;
     font-size: 12px;
     line-height: 17px;
+}
+.clearfix{
+	margin-bottom: 10px;
+	margin-top: 10px;
+	padding-bottom: 10px;
+}
+
+.playicon {
+    width: 48px;
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%,-50%);
+    background-image: url(https://online.thedailystar.net/sites/all/themes/asiacup/images/youtube-play.png);
+    background-size: 44px 45px;
+    height: 64px;
+    background-repeat: no-repeat;
 }
